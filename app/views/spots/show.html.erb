@@ -1,1 +1,21 @@
-<h1>coucou show</h1>
+<div class="presentation-body">
+
+<div class="container">
+  <div style="width: 100%; height: 350px;"
+    data-controller="mapbox"
+    data-mapbox-markers-value="<%= @markers.to_json %>"
+    data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+
+  <div class="row justify-content-center">
+    <p>ICI LES INFORMATIONS RELATIVES AU POINT DE GEOLOCALISATION</hp>
+  </div>
+  <div class="row justify-content-center">
+    <h3>ET ENFIN ICI LA DESCRIPTION AVEC L'ADRESSE EXACTE DE LA GEOLOCALISATION</h3>
+  </div>
+
+</div>
+
+
+
+</div>

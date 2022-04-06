@@ -12,10 +12,14 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "spots/index";
 
 body {
-  width: 375px;
-  height: 812px;
+  width: 100vw;
+  height: 100vh;
   background: #F1C40F;
-  font:'HelveticaNeue', Helvetica, Arial, sans-serif;;
+  font:'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+.presentation-body {
+  padding: 0; margin: 0; box-sizing: border-box; height: 91vh;
 }
