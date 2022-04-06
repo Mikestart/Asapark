@@ -1,1 +1,50 @@
-// Specific CSS for your home-page
+
+.presentation-body{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 712px;
+}
+
+.container-sm {
+	background-color: #34495e;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+
+
+h1 {
+  display: flex;
+  align-items: center;
+	font-family: 'arial';
+	font-size: 16;
+	margin-bottom: 30px;
+  color: white;
+}
+
+h3, p {
+  display: flex;
+  align-items: center;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 16px;
+  color: white;
+}
+
+#formulaire-adresse{
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #979797;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+}
+}

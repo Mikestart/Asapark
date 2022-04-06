@@ -1,2 +1,24 @@
-<h1>This is the Asapark home page</h1>
-<%= link_to "Index de la map", spots_path %>
+
+
+<div class="presentation-body">
+  <div class="container-sm">
+
+    <h1>ASAPark</h1>
+      <br>
+        <h3>Trouve ta place de parking</h3>
+      <br>
+      <div id="formulaire-adresse">
+        <form class="searchform cf">
+          <input type="text" placeholder="Adresse de destination">
+          <button type="submit">Recherche</button>
+        </form>
+      </div>
+
+  </div>
+
+   <%= render 'shared/button_logo_handicap' %>
+
+  <%= render 'shared/navbar' %>
+
+
+</div>
