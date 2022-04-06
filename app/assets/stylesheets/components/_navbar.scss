@@ -1,12 +1,32 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+
+nav {
+  background: #fff;
+  width: 100%;
+  height: 5rem;
+  box-shadow: 0 0 6px rgba(172, 170, 170, 0.4);
+}
+nav:after {
+  content:'';
+  width: 25%;
+  height: 5rem;
+  background: #5a341d;
+  position: absolute;
+  transition: .5s;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+label {
+  width: 25%;
+  float: left;
+  color: #b9c7d4;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s;
+  z-index: 2;
 }
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+label:hover {color: #6c757d;}
+label:before {
+  display: block;
+  font-size: 3rem;
+  line-height: 5rem;
+  z-index: 2;
 }
