@@ -24,7 +24,7 @@ disabled = JSON.parse(File.read(filepath))
 parks = disabled.values[0]
 
   parks.each do |element|
-    address = "#{element["NUM"].to_i} #{element["NOM_VOIE"]}"
+    address = "#{element["NUM"].to_i} #{element["NOM_VOIE"]}, 06000 Nice"
     spot_number = element["NB_PLACE"].to_i
     latitude = element["geometry"]["coordinates"][1]
     longitude = element["geometry"]["coordinates"][0]
