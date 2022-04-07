@@ -1,4 +1,4 @@
-
+<%#
 <head>
 <meta charset="utf-8">
 <title>Display navigation directions</title>
@@ -30,9 +30,27 @@ accessToken: mapboxgl.accessToken
 }),
 'top-left'
 );
-</script>
-</div>
+</script> %>
+<%# </div>
  <div id="info">
  <h1 class="text-center ">Informations</h1>
 <%= @spot.address %>
-<ul><h2>Description à rajouter dans la DB</h2></ul>
+<%# <ul><h2>Description à rajouter dans la DB</h2></ul> %> %>
+
+<div class="presentation-body">
+
+<div class="container">
+  <div style="width: 100%; height: 350px;"
+    data-controller="mapbox-show"
+    data-mapbox-markers-value="<%= @markers.to_json %>"
+    data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+
+  <div class="row justify-content-center">
+    <h2>ICI LES INFORMATIONS RELATIVES AU POINT DE GEOLOCALISATION</h2>
+  </div>
+  <div class="row justify-content-center">
+    <p>ET ENFIN ICI LA DESCRIPTION AVEC L'ADRESSE EXACTE DE LA GEOLOCALISATION</p>
+  </div>
+
+</div>
