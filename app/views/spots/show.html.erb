@@ -35,7 +35,7 @@ accessToken: mapboxgl.accessToken
  <div id="info">
  <h1 class="text-center ">Informations</h1>
 <%= @spot.address %>
-<%# <ul><h2>Description à rajouter dans la DB</h2></ul> %> %>
+<%# <ul><h2>Description à rajouter dans la DB</h2></ul> %>
 
 <div class="presentation-body">
 
@@ -46,11 +46,23 @@ accessToken: mapboxgl.accessToken
     data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
 
-  <div class="row justify-content-center">
-    <h2>ICI LES INFORMATIONS RELATIVES AU POINT DE GEOLOCALISATION</h2>
+<div class="card">
+  <div class="card-body">
+  <div class="card-top">
+  <%= image_tag "logo_handicap_geolocal.jpg", class:"card-img-top",alt:"logo handicap"%>
+
+    <h4 class="card-title"><%= @spot.address %></h4>
+
   </div>
-  <div class="row justify-content-center">
-    <p>ET ENFIN ICI LA DESCRIPTION AVEC L'ADRESSE EXACTE DE LA GEOLOCALISATION</p>
+    <h6> A 450m</h6>
+<div class= "text-center">
+<a href="#" class="btn btn-secondary btn-lg">Itinéraire</a>
+</div>
+   <br>
+  <p class="card-text">Cras viverra libero ultrices ante auctor, a mattis odio fermentum. Aenean fringilla urna turpis, eu egestas erat ultricies blandit. Aliquam tristique justo vel parking</p>
+
+    </div>
   </div>
+</div>
 
 </div>
