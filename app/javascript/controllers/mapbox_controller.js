@@ -14,14 +14,16 @@ export default class extends Controller {
       container: this.element,
       style: "mapbox://styles/mapbox/streets-v10",
       center: [2.64510, 46.71853],
-      zoom: 5
+      zoom: 12
     })
 
     this.#addControlToMap()
     this.#addMarkersToMap()
     this.#fitMapToMarkers()
+    // this.#addClickToMarker()
 
   }
+
 
   #addControlToMap() {
     this.map.addControl(
@@ -50,4 +52,20 @@ export default class extends Controller {
     this.markersValue.forEach(marker => bounds.extend([ marker.lng, marker.lat ]))
     this.map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 })
   }
+
+
+  // #addClickToMarker() {
+
+  //   this.markersValue.forEach((marker) => {
+  //     console.log(this.markers)
+  //   marker.getElement().addEventListener('click', event => {
+  //     console.log("hello")
+  //   });
+  // });
+
+  // // element.addEventListener(eventType, (event) => {
+  // //   // Do something (callback)
+  // // });
+
+  // }
 }

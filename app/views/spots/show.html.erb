@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="presentation-body">
 
 <div class="container">
@@ -19,3 +20,43 @@
 
 
 </div>
+=======
+
+<head>
+<meta charset="utf-8">
+<title>Display navigation directions</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+<style>
+#map { position: absolute; top: 0; bottom: 70%; width: 100%; }
+#info { position: absolute; top: 50%; bottom: 50%; width: 100%; }
+</style>
+</head>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js d-none"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+<div id="map">
+
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoieml6b3VkdTA2IiwiYSI6ImNsMWppczRpZzFvdTIzZXJ0Z3gybnEwZzEifQ.zrJCinBbW9v-a6L6dkiBnw';
+const map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [7.2683912, 43.7009358],
+zoom: 12
+});
+
+map.addControl(
+new MapboxDirections({
+accessToken: mapboxgl.accessToken
+}),
+'top-left'
+);
+</script>
+</div>
+ <div id="info">
+ <h1 class="text-center ">Informations</h1>
+<%= @spot.address %>
+<ul><h2>Description à rajouter dans la DB</h2></ul>
+>>>>>>> 1a85e60c57f050e68518375d57d3c067f563aea5
