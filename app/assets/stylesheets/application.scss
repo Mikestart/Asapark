@@ -21,5 +21,47 @@ body {
   font:'HelveticaNeue', Helvetica, Arial, sans-serif;
 }
 .presentation-body {
-  padding: 0; margin: 0; box-sizing: border-box; height: 91vh;
+
+  padding: 0;
+  margin: 0;
+  box-sizing:
+  border-box;
+  height: 88vh;
+}
+
+.card-body {
+height:364px;
+color: #1d1c1b;
+width: 400px;
+padding: 0;
+border-radius: 5px;
+h6 {
+  margin-top: 8px;
+
+}
+}
+
+.card-text {
+  color: #1d1c1b;
+  text-align: left;
+
+}
+.card-title{
+  color: black;
+  text-align: justify;
+}
+.card-img-top {
+  width: 50px;
+  background-color: white;
+}
+.card-top {
+  display:flex;
+  h4 {
+margin-left: 6px;
+  }
+}
+
+.btn.btn-secondary.btn-lg{
+  border-radius: 10%;
+
 }
