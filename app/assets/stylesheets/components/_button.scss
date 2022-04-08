@@ -1,0 +1,21 @@
+.button {
+  background: #FBCA1F;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 600;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 1.4em;
+  box-shadow: 0.1em 0.1em;
+  color: #1d1c1b;
+ }
+
+ .button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+ }
+
+ .button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+ }

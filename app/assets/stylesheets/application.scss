@@ -22,31 +22,31 @@ body {
   position: relative;
 }
 .presentation-body {
-
   padding: 0;
   margin: 0;
   box-sizing:
   border-box;
   height: 88vh;
 }
-
+.card {
+  border-radius: 35px;
+  }
 .card-body {
-height:364px;
+height:445px;
 color: #1d1c1b;
-padding: 0;
-border-radius: 5px;
+padding: 11px;
+border-radius: 10px;
 h6 {
   margin-top: 12px;
   margin-bottom: 36px;
-
-
 }
 }
 
 .card-text {
   color: #1d1c1b;
   text-align: justify;
-  position:absolute;
+  position: fixed;
+  padding: 10px;
 
 }
 .card-title{
@@ -58,6 +58,7 @@ h6 {
 .card-img-top {
   width: 50px;
   background-color: white;
+  border-radius: 10%;
 }
 .card-top {
   display:flex;
@@ -69,27 +70,13 @@ margin-left: 6px;
 
 .btn.btn-secondary.btn-lg{
   border-radius: 10%;
-
 }
 
-.button {
-  background: #FBCA1F;
-  font-family: inherit;
-  padding: 0.6em 1.3em;
-  font-weight: 600;
-  font-size: 18px;
-  border: 3px solid black;
-  border-radius: 0.4em;
-  box-shadow: 0.1em 0.1em;
-  color: #1d1c1b;
- }
-
- .button:hover {
-  transform: translate(-0.05em, -0.05em);
-  box-shadow: 0.15em 0.15em;
- }
-
- .button:active {
-  transform: translate(0.05em, 0.05em);
-  box-shadow: 0.05em 0.05em;
- }
+// .card-white {
+//   width: 190px;
+//   height: 254px;
+//   border-radius: 50px;
+//   background: #e0e0e0;
+//   box-shadow: 20px 20px 60px #bebebe,
+//                 -20px -20px 60px #ffffff;
+//  }
