@@ -13,18 +13,46 @@
 	border-radius: 0 0 85% 85% / 30%;
 }
 
+.gradient {
+  background: hsla(48, 89%, 50%, 1);
+
+  background: linear-gradient(90deg, hsla(48, 89%, 50%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(48, 89%, 50%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+  background: -webkit-linear-gradient(90deg, hsla(48, 89%, 50%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+}
+
+.gradient-blue {
+background: hsla(217, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+}
+
 
 h1 {
-  display: flex;
+  display: ruby-text-container;
   align-items: center;
 	font-family: 'arial';
 	font-size: 16;
-	margin-bottom: 30px;
+	margin-top: 10px;
   color: white;
 }
 
+h2 {
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
 h3, p {
-  display: flex;
+  display: ruby-text-container;
   align-items: center;
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 16px;
@@ -45,4 +73,8 @@ button {
 button:hover{
 	cursor: pointer;
 }
+}
+
+.link {
+  text-decoration: none;
 }
