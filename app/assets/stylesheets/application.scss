@@ -19,6 +19,7 @@ body {
   height: 100vh;
   background: #F1C40F;
   font:'HelveticaNeue', Helvetica, Arial, sans-serif;
+  position: relative;
 }
 .presentation-body {
 
@@ -32,23 +33,27 @@ body {
 .card-body {
 height:364px;
 color: #1d1c1b;
-width: 400px;
 padding: 0;
 border-radius: 5px;
 h6 {
-  margin-top: 8px;
+  margin-top: 12px;
+  margin-bottom: 36px;
+
 
 }
 }
 
 .card-text {
   color: #1d1c1b;
-  text-align: left;
+  text-align: justify;
+  position:absolute;
 
 }
 .card-title{
   color: black;
   text-align: justify;
+  font-size: 16px;
+  font-weight: bold;
 }
 .card-img-top {
   width: 50px;
@@ -58,6 +63,7 @@ h6 {
   display:flex;
   h4 {
 margin-left: 6px;
+
   }
 }
 
@@ -65,3 +71,25 @@ margin-left: 6px;
   border-radius: 10%;
 
 }
+
+.button {
+  background: #FBCA1F;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 600;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  color: #1d1c1b;
+ }
+
+ .button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+ }
+
+ .button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+ }
