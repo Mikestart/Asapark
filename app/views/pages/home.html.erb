@@ -1,11 +1,8 @@
-
-
 <div class="presentation-body">
   <div class="container-sm">
-
-    <h1>ASAPark</h1>
+    <h1 class="text-center">ASAPark</h1>
       <br>
-        <h3>Trouve ta place de parking</h3>
+        <h3 class="text-center">Trouve ta place de parking</h3>
       <br>
       <div id="formulaire-adresse">
         <form class="searchform cf">
@@ -13,12 +10,11 @@
           <button type="submit">Recherche</button>
         </form>
       </div>
-
   </div>
-
-   <%= render 'shared/button_logo_handicap' %>
-
-
-
-
+  <%= link_to spots_path do %>
+      <div class="text-center" style="margin-top: 30%;">
+        <%= image_tag "logo_handicap_geolocal.jpg",  class: "link", alt: "Disabled", width: 100 %>
+        <h2><strong>A proximité</strong></h2>
+      </div>
+  <% end %>
 </div>
