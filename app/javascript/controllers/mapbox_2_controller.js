@@ -55,18 +55,3 @@ export default class extends Controller {
     this.map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 })
   }
 }
-
-  // #addClickToMarker() {
-
-  //   this.markersValue.forEach((marker) => {
-  //     console.log(this.markers)
-  //   marker.getElement().addEventListener('click', event => {
-  //     console.log("hello")
-  //   });
-  // });
-
-  // // element.addEventListener(eventType, (event) => {
-  // //   // Do something (callback)
-  // // });
-
-  // }
