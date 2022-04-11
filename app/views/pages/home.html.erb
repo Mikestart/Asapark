@@ -1,16 +1,15 @@
 <div class="presentation-body gradient">
-  <div class="container-sm gradient-blue">
+  <div class="container-sm">
     <h1 class="text-center">ASAPark</h1>
       <br>
         <h3 class="text-center">Trouve ta place de parking</h3>
       <br>
-      <div id="formulaire-adresse", data-controller="geocoder">
-        <%= simple_form_for :search,  url: matches_path , :method => :get do |f| %>
-          <%= f.input :query, :autofocus => true, input_html: { data: { geocoder_target: "address" } },
-              wrapper_html: { data: { controller: "geocoder", geocoder_api_key_value: ENV['MAPBOX_API_KEY'] } }  %>
-          <%= f.submit "Search" %>
-        <% end %>
-
+      <div class="mapboxgl-ctrl-geocoder">
+      <%= simple_form_for :search, url: matches_path, method: "get" do |f|%>
+      <%= f.input :address, input_html: { data: { geocoder_target: "address" }, class: "d-none" },
+              wrapper_html: { data: { controller: "geocoder", geocoder_api_key_value: ENV['MAPBOX_API_KEY'] } } %>
+      <%= f.button :submit, class: "btn btn-secondary" %>
+      <% end %>
       </div>
 
   </div>

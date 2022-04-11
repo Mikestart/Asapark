@@ -20,7 +20,7 @@ class SpotsController < ApplicationController
   end
 
   def matches
-    @spots = Spot.all
+    @spots = Spot.near(params[:search][:address], 0.2)
 
     # the `geocoded` scope filters only flats with coordinates (latitude & longitude)
     @markers = @spots.geocoded.map do |spot|
@@ -30,6 +30,5 @@ class SpotsController < ApplicationController
         info_window: render_to_string(partial: "info_window", locals: { spot: spot })
       }
     end
-
   end
 end
