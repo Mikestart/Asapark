@@ -24,16 +24,6 @@
 
 }
 
-.gradient-blue {
-background: hsla(217, 100%, 50%, 1);
-
-background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-
-background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-
-}
 
 
 h1 {
@@ -77,4 +67,12 @@ button:hover{
 
 .link {
   text-decoration: none;
+}
+
+.mapboxgl-ctrl-geocoder {
+  max-width: none;
+  width: 100%;
+  border: 1px solid lightgrey;
+  box-shadow: none;
+  margin-bottom: 75px;
 }
