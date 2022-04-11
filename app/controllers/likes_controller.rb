@@ -13,6 +13,20 @@ class LikesController < ApplicationController
     @like.destroy
   end
 
+  def update
+    favorite = Like.where(spot: spot.find(params[:spot]), user: curent_user)
+    if favorite == []
+      #create the favorite
+      Like.create(spot: Spot.find(params[:spot]), user: curent_user)
+    else
+      #delete the favorite
+      favorite.destroy_all
+  end
+  # respond_to do |format|
+  #   format.html {}
+  #   format.js {}
+  # end
+
   private
 
   def like_params
