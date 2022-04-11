@@ -18,9 +18,11 @@ class LikesController < ApplicationController
     if favorite == []
       #create the favorite
       Like.create(spot: Spot.find(params[:spot]), user: curent_user)
+      @favorite_exists = true
     else
       #delete the favorite
       favorite.destroy_all
+      @favorite_exists = false
   end
   # respond_to do |format|
   #   format.html {}
