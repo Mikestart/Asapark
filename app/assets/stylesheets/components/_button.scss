@@ -1,10 +1,4 @@
-.mapboxgl-popup {
-  max-width: 100px;
-  color: #1d1c1b;
-
-}
-
-.mapboxgl-popup-content {
+.button {
   background: #FBCA1F;
   font-family: inherit;
   padding: 0.6em 1.3em;
@@ -14,11 +8,14 @@
   border-radius: 1.4em;
   box-shadow: 0.1em 0.1em;
   color: #1d1c1b;
-}
+ }
 
+ .button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+ }
 
-.mapboxgl-popup-content a {
-  font-size: 16px;
-  color: rgb(11, 11, 11);
-
-}
+ .button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+ }

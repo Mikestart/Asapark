@@ -25,8 +25,9 @@ parks = disabled.values[0]
 
   parks.each do |element|
     address = "#{element["NUM"].to_i} #{element["NOM_VOIE"]}, 06000 Nice"
+    description ="#{element["COMPLEMENT"]}"
     spot_number = element["NB_PLACE"].to_i
     latitude = element["geometry"]["coordinates"][1]
     longitude = element["geometry"]["coordinates"][0]
-    spot = Spot.create!(address: address, spot_number: spot_number, latitude: latitude, longitude: longitude)
+    spot = Spot.create!(address: address, spot_number: spot_number, latitude: latitude, longitude: longitude, description: description)
   end
