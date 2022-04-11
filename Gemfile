@@ -30,6 +30,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise'
 gem "geocoder"
+gem "jquery-rails"
 
 
 gem 'autoprefixer-rails', '10.2.5'
