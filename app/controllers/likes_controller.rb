@@ -5,6 +5,7 @@ class LikesController < ApplicationController
     new_like.user_id = curent_user
      if new_like.save!
       redirect_to spot_path(new_like.spot_id)
+     end
   end
 
   def destroy
@@ -23,11 +24,8 @@ class LikesController < ApplicationController
       #delete the favorite
       favorite.destroy_all
       @favorite_exists = false
+    end
   end
-  # respond_to do |format|
-  #   format.html {}
-  #   format.js {}
-  # end
 
   private
 
