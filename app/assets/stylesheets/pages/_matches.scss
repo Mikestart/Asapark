@@ -1,0 +1,28 @@
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+    .geocoder {
+        position: absolute;
+        z-index: 1;
+        width: 50%;
+        left: 50%;
+        margin-left: -25%;
+        top: 10px;
+    }
+    .mapboxgl-ctrl-geocoder {
+        min-width: 100%;
+    }
+    #map {
+        margin-top: 75px;
+    }
+
+    .gradient {
+      background: hsla(48, 89%, 50%, 1);
+
+      background: linear-gradient(90deg, hsla(48, 89%, 50%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+      background: -moz-linear-gradient(90deg, hsla(48, 89%, 50%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+      background: -webkit-linear-gradient(90deg, hsla(48, 89%, 50%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+    }

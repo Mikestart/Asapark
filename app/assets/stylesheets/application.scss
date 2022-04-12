@@ -7,12 +7,14 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome";
 @import "mapbox-gl/dist/mapbox-gl";
+@import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder";
 
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
 @import "spots/index";
+@import "pages/matches";
 
 body {
   width: 100vw;
