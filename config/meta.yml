@@ -1,0 +1,6 @@
+
+meta_product_name: "Asapark"
+meta_title: "Asapark - Trouve ta place handicapé ASAP"
+meta_description: "Asapark, c'est la meilleure solution pour trouver ta place handicapé"
+meta_image: "cover.jpg" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards
