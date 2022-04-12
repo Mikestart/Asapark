@@ -1,7 +1,7 @@
 <div class="presentation-body gradient">
   <div class="container-sm">
 
-     <%= image_tag "logo_transparent.png", alt: "Logo ASAPark", width: 300 %>
+     <%= image_tag "logo_transparent.png", alt: "Logo ASAPark", width: 250 %>
 
         <h3 class="text-center">Ma place de parking
 handicapé ASAP</h3>
@@ -13,12 +13,12 @@ handicapé ASAP</h3>
       <%= f.button :submit, class: "btn btn-secondary" %>
       <% end %>
       </div>
-
-  </div>
-  <%= link_to spots_path do %>
-      <div class="text-center" style="margin-top: 30%;">
-        <%= image_tag "logo_handicap_geolocal.jpg",  class: "link", alt: "Disabled", width: 100 %>
+<%= link_to spots_path do %>
+      <div class="text-center">
+        <%= image_tag "logo_home_purple.jpg",  class: "link", alt: "Disabled", width: 100 %>
         <h2><strong>A proximité</strong></h2>
       </div>
   <% end %>
+  </div>
+
 </div>
