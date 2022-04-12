@@ -16,13 +16,6 @@ class SpotsController < ApplicationController
 
   def show
     @spot = Spot.find(params[:id])
-    # @spot = spot
-    # @marker ={
-    #   lat: spot.latitude,
-    #   lng: spot.longitude,
-    #   info_window: render_to_string(partial: "info_window", locals: { spot: spot })
-
-    # }
     @spot_map = Spot.where(id: params[:id])
     @marker = @spot_map.geocoded.map do |spot|
 
