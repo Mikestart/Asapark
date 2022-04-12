@@ -1,8 +1,10 @@
 <div class="presentation-body gradient">
   <div class="container-sm">
-    <h1 class="text-center">ASAPark</h1>
-      <br>
-        <h3 class="text-center">Trouve ta place de parking</h3>
+
+     <%= image_tag "logo_transparent.png", alt: "Logo ASAPark", width: 300 %>
+
+        <h3 class="text-center">Ma place de parking
+handicapé ASAP</h3>
       <br>
       <div class="mapboxgl-ctrl-geocoder">
       <%= simple_form_for :search, url: matches_path, method: "get" do |f|%>
