@@ -28,6 +28,9 @@ class SpotsController < ApplicationController
 
       }
     end
+    @spot_map.each do |spot|
+      @url = "https://www.google.com/maps/dir/le+wagon+nice/#{spot.latitude}+#{spot.longitude}"
+    end
   end
 
   def matches
