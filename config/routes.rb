@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   resources :spots, only: [ :index, :show ]
 
   # resources :likes, only: [ :update ]
-
+  resources :reviews, only: [:create, :new, :index, :destroy]
   get 'matches', to: 'spots#matches'
+  get 'profile', to: 'pages#profile'
 
 end

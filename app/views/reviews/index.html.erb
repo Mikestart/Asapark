@@ -1,0 +1,11 @@
+<h1 class="text-center">Vos commentaires</h1>
+
+<div class="container text-center">
+  <ul>
+    <% @reviews.each do |review| %>
+      <li><%= review.content %></li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="mb3 container text-center"> <%= button_to "Ajouter le votre", new_review_path, class: "btn btn-primary", method: :get %></div>
