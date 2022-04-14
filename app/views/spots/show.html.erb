@@ -3,7 +3,7 @@
 
 <div class="presentation-body">
 
-  <div class="map-show" style="width: 100%; height: 300px;"
+  <div class="map-show"  style="width: 100%; height: 425px;"
     data-controller="mapbox"
     data-mapbox-markers-value="<%= @marker.to_json %>"
 
@@ -14,14 +14,15 @@
     <div class="card-body">
       <div class="card-top">
       <%= image_tag "spot_handicap_purple.svg", style:"width: 30%; height: 92px", class:"logo",alt:"logo handicap"%>
-
         <h4 class="card-title"><%= @spot.address %></h4>
 
       </div>
+
       <div id="map-user-distance">
       </div>
       <br>
       <br>
+        
       <div class= "text-center">
       <a href="<%= @url %>" target="_blank" class="button">Itinéraire</a>
       <a href="<%= @url2 %>" target="_blank" class="button">Street View</a>
