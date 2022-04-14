@@ -1,2 +1,6 @@
-<p> 👉 <%= spot.spot_number %> 🅿 à cet endroit  </p>
-<p><%= link_to 'Details', spot_url(spot.id) %> </p>
+<%= link_to spot_url(spot.id) do %>
+  <div class= "button-popup-info-window">
+   <h3> 👉 <%= spot.spot_number %> 🅿 à cet endroit</h3>
+
+  </div>
+<% end %>
