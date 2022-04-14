@@ -13,6 +13,7 @@ export default class extends Controller {
     mapboxgl.accessToken = this.apiKeyValue
 
     this.map = new mapboxgl.Map({
+
       container: this.element,
       style: "mapbox://styles/mapbox/streets-v10",
       center: [7.259382, 43.702955],
@@ -22,8 +23,9 @@ export default class extends Controller {
     this.#addControlToMap()
     this.#addMarkersToMap()
     this.#fitMapToMarkers()
-    // this.map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken,
-    //   mapboxgl: mapboxgl }))
+    this.#calculateDistance()
+    this.map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken,
+      mapboxgl: mapboxgl }))
 
   }
 
@@ -66,5 +68,12 @@ export default class extends Controller {
     this.map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 })
   }
 
+  #calculateDistance() {
+    const to = [lng, lat] //lng, lat
+    const from = [lng, lat] //lng, lat
+   to.lng = this.markersValue.first.lng
+   to.lat = this.markersValue.first.lat
+   console.log(to);
+  }
 
 }
