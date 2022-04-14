@@ -1,6 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 import mapboxgl from "mapbox-gl"
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder"
+import * as turf from '@turf/turf';
 
 
 export default class extends Controller {
@@ -69,22 +70,23 @@ export default class extends Controller {
   }
 
   #calculateDistance() {
-    const to = [lng, lat] //lng, lat
-    const from = [lng, lat] //lng, lat
-    console.log(lng);
-   to.lng = this.markersValue.first.lng
-   to.lat = this.markersValue.first.lat
-   from = [7.259382, 43.702955]
-   console.log(to);
-   console.log(from);
+
+    // console.log(marker.lng);
+  const lng = this.markersValue[0].lng;
+  const lat = this.markersValue[0].lat;
+  const to = [lng, lat]
+  const from = [7.259382, 43.702955]
+
+   console.log(lng);
+
 
    const options = {
     units: 'kilometers'
   }; // units can be degrees, radians, miles, or kilometers, just be sure to change the units in the text box to match.
-  const distance = turf.distance(to, from, options);
+  const distance =  turf.distance(to, from, options);
 
   const value = document.getElementById('map-user-distance')
-  value.innerHTML = "Distance: " + distance.toFixed([2]) + " kilometers"
+  value.innerHTML = "Distance: " + distance.toFixed([2])*1000 + " mètres"
 
   }
 
