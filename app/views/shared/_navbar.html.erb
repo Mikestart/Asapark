@@ -4,11 +4,11 @@
   <a href="/reviews"><label for="show" class='fa-solid fa-comment'></label></a>
   <% if user_signed_in? %>
         <%= link_to profile_path do%>
-    <label class="fa fa-user">Profile</label>
+    <label class="fas fa-envelope">Profile</label>
     <% end %>
   <% else %>
     <%= link_to user_session_path do%>
-    <label class="fa fa-user">Profile</label>
+    <label class="fas fa-envelope">Profile</label>
     <% end %>
   <% end %>
 </nav>
