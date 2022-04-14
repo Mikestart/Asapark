@@ -4,19 +4,11 @@
   <a href="/reviews"><label for="show" class='fa-solid fa-comment'></label></a>
   <% if user_signed_in? %>
         <%= link_to profile_path do%>
-<<<<<<< HEAD
-    <label class="fas fa-envelope">Profile</label>
+    <label class="fa-solid fa-envelope"></label>
     <% end %>
   <% else %>
     <%= link_to user_session_path do%>
-    <label class="fas fa-envelope">Profile</label>
-=======
-    <label class="fa fa-user"></label>
-    <% end %>
-  <% else %>
-    <%= link_to user_session_path do%>
-    <label class="fa fa-user"></label>
->>>>>>> master
+    <label class="fa-solid fa-envelope"></label>
     <% end %>
   <% end %>
 </nav>
