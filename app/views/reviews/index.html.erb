@@ -1,11 +1,11 @@
 <h1 class="text-center">Vos commentaires</h1>
 
 <div class="container text-center">
-  <ul>
     <% @reviews.each do |review| %>
-      <li><%= review.content %></li>
+      <div class="card border border-dark mt-2 justify-content-center table table-striped" style="border-radius: 75px">
+      <p class="card-body" style="height: inherit"><%= review.content %></p>
+      </div>
     <% end %>
-  </ul>
 </div>
 
-<div class="mb3 container text-center"> <%= button_to "Ajouter le votre", new_review_path, class: "btn btn-primary", method: :get %></div>
+<div class="mb3 container text-center"> <%= button_to "Ajouter le votre", new_review_path, class: "button-review", method: :get %></div>
