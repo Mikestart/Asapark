@@ -1,7 +1,7 @@
 class ReviewsController < ApplicationController
 
   def index
-    @reviews = Review.all
+    Review.all.present? ? @reviews = Review.all.sort{|review| review.created_at} : @reviews = Review.all
   end
 
   def new
