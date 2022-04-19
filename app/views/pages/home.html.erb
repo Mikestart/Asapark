@@ -1,15 +1,7 @@
 <div class="presentation-body gradient">
   <div class="container-sm">
 
-      <div class="mapboxgl-ctrl-geocoder">
-      <%= simple_form_for :search, url: matches_path, method: "get" do |f|%>
-      <%= f.input :address,  label: false, placeholder: "adresse", input_html: { data: { geocoder_target: "address" }, class: "d-none" },
-              wrapper_html: { data: { controller: "geocoder", geocoder_api_key_value: ENV['MAPBOX_API_KEY'] } } %>
-      <%= f.button :submit, value: "Chercher", class: "btn btn-secondary" %>
-      <% end %>
-      </div>
-      <br>
-<%= link_to spots_path do %>
+
 
      <%= image_tag "logo_transparent.png", alt: "Logo ASAPark", class: "animate__animated animate__flip", width: 250 %>
 
@@ -18,6 +10,15 @@
 handicapé ASAP</h3>
       <br>
 
+  <div class="mapboxgl-ctrl-geocoder">
+      <%= simple_form_for :search, url: matches_path, method: "get" do |f|%>
+      <%= f.input :address,  label: false, placeholder: "adresse", input_html: { data: { geocoder_target: "address" }, class: "d-none" },
+              wrapper_html: { data: { controller: "geocoder", geocoder_api_key_value: ENV['MAPBOX_API_KEY'] } } %>
+      <%= f.button :submit, value: "Chercher", class: "btn btn-secondary" %>
+      <% end %>
+      </div>
+      <br>
+<%= link_to spots_path do %>
 
       <div class="text-center mt-5">
         <%= image_tag "spot_handicap_purple.svg",  class: "link rotating", alt: "Disabled", width: 100 %>
